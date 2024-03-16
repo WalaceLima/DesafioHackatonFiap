@@ -1,0 +1,16 @@
+version: '3.1'
+
+services: 
+  
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: usr
+      POSTGRES_PASSWORD: pwd
+      POSTGRES_DB: desafio_hackaton  
+        
+  hackaton: 
+    image: desafio_hackaton:latest
+    ports:
+      - 8081:8081  

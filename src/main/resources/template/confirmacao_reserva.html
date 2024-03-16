@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Reserva</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="600"
+       style="border-collapse: collapse; background-color: #ffffff;">
+    <tr>
+        <td align="center"
+            style="padding: 40px 0 30px 0; background-color: #70bbd9; color: #ffffff; font-size: 28px; font-weight: bold; font-family: Arial, sans-serif;">
+            Confirmação de Reserva
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 40px 30px 40px 30px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td style="color: #153643; font-family: Arial, sans-serif;">
+                        Olá, {{nome}}!
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif;">
+                        Sua reserva no <strong>{{nomeHotel}}</strong> foi confirmada para o período de <strong>{{dataInicio}}</strong>
+                        até <strong>{{dataFim}}</strong>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Detalhes da reserva:
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>Valor total: {{valorTotal}}</li>
+                            <li>Quantidades de quartos: {{qtdQuartos}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Tipo de quarto:
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li>{{tipoQuarto}}</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Serviços Incluídos:
+                        <ul style="list-style-type: none; padding: 0;">
+                            {{listaDeServicos}}
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif;">
+                        Obrigado por escolher nosso serviço!
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
